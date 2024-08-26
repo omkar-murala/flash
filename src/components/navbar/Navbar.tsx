@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaTimes } from 'react-icons/fa';
+// import Link from 'next/link';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,9 +13,13 @@ const Navbar = () => {
   return (
     <nav className="bg-[#000033] p-4 md:p-6 flex items-center justify-between relative">
       {/* Logo */}
-      <div className="flex items-center ml-6">
-        <Image src="/flashlogo.png" alt="logo" width={32} height={32} className="mr-2" />
-        <span className="text-white text-lg md:text-xl font-bold">Flash</span>
+      <div className="flex items-center mr-6 md:ml-6">
+        <Link href="/" passHref>
+          <div className="flex items-center cursor-pointer">
+            <Image src="/flashlogo.png" alt="logo" width={32} height={32} className="mr-2" />
+            <span className="text-white text-lg md:text-xl font-bold">Flash</span>
+          </div>
+        </Link>
       </div>
 
       {/* Desktop Menu Links */}

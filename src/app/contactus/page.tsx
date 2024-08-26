@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const ContactUsSection = () => {
@@ -216,70 +217,61 @@ const ContactUsSection = () => {
         </div>
       </section>
       {/* Footer Section */}
-<footer className="bg-gray-900 text-white py-8">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gray-900 text-white py-8">
+  <div className="max-w-6xl mx-auto px-4 sm:px-0 lg:px-0">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-14 py-8">
 
-    {/* Footer Content */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
       {/* Logo and Company Info */}
-      <div className="flex flex-col">
-        <Image
-          src="/flashlogo.png" // Adjust path to match your public directory structure
-          alt="Flash Logo"
-          width={96} // Adjust width to match design
-          height={24} // Adjust height to match design
-          className="mb-4"
-        />
-        <p className="text-sm">Flashport Technologies Private Limited</p>
-        <p className="text-sm">1234 Main Street, City Name, Country</p>
-      </div>
-
-      {/* Links */}
-      <div>
-        <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-        <ul>
-          <li>
-            <a href="/terms-of-service" className="text-sm hover:underline">Terms of Service</a>
-          </li>
-          <li>
-            <a href="/privacy-policy" className="text-sm hover:underline">Privacy Policy</a>
-          </li>
-        </ul>
-      </div>
-
-      {/* Contact Us */}
-      <div>
-        <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
-        <p className="text-sm">Feel free to reach out if you have any questions or need further assistance.</p>
-        <a href="/contact-us" className="text-sm text-white bg-gray-700 px-4 py-2 rounded-md mt-4 inline-block hover:bg-gray-600 transition">
-          Contact Us
-        </a>
-      </div>
-
-      {/* Social Media Links (Optional) */}
-      <div>
-        <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-        <div className="flex space-x-4">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-github"></i>
-          </a>
+      <div className="text-left">
+        <Link href="/" passHref>
+          <div className="flex items-center cursor-pointer mb-4">
+            <Image
+              src="/flashlogo.png" 
+              alt="Flash Logo"
+              width={32}
+              height={32}
+              className="mr-4"
+            />
+            <span className="text-white text-lg md:text-xl font-bold">Flash</span>
+          </div>
+        </Link>
+        <div>
+          <p className="text-sm text-white">Flashport Technologies Private Limited</p>
+          <p className="text-sm text-white">1234 Main Street, City Name, Country</p>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul>
+              <li className="mb-2">
+                {/* <Link href="/terms-of-service"> */}
+                  <a className="text-sm hover:underline">Terms of Service</a>
+                
+              </li>
+              <li>
+                {/* <Link href="/privacy-policy"> */}
+                  <a className="text-sm hover:underline">Privacy Policy</a>
+                {/* </Link> */}
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Us */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
+            <a href="/contactus" className="text-sm text-white bg-gray-700 px-4 py-2 rounded-md inline-block hover:bg-gray-600 transition">
+              Contact Us
+            </a>
+            <p className="text-sm mt-4">Feel free to reach out if you have any questions or need further assistance.</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
     </div>
   );
 };

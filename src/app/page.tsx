@@ -13,9 +13,11 @@ import {
   Tooltip,
 } from "chart.js";
 import Image from "next/image";
+import Link from 'next/link';
 import { useEffect, useRef, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { FaBoxOpen, FaChartLine, FaClipboardList, FaPeopleCarry, FaRocket, FaShippingFast, FaStore, FaTruck, FaWarehouse } from 'react-icons/fa';
+
 
 ChartJS.register(
   CategoryScale,
@@ -487,103 +489,112 @@ const HomePage = () => {
       </div>
     </section>
 
-     {/* how it works */}
-     <section className="bg-gray-900 text-white py-16 px-4 text-center">
-  <h2 className="text-3xl font-bold mb-12">How It Works</h2>
 
-  <div className="flex flex-col gap-12 items-center">
-    {/* Step 1 */}
-    <div className="flex items-start max-w-4xl w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg">
-      <FaStore size={60} className="text-blue-500 mr-6" />
-      <div className="text-left">
-        <h3 className="text-xl font-semibold mb-2">Connect Marketplaces and Storefronts</h3>
-        <p className="mb-4">Pull all the orders and manage them with Flash.</p>
-        {/* Asset Placeholder */}
-        <p className="text-gray-400">Streamline your orders seamlessly.</p>
-      </div>
-    </div>
+    {/* how it works */}
+    <section className="bg-black text-white py-16 px-4 text-center">
+    <h2 className="text-3xl font-bold mb-4 font-[Inter Tight]">How It Works</h2>
+    <h2 className="text-3xl font-bold mb-12 font-[Inter Tight]">Go Flash in 3 Simple Steps</h2>
+    <div className="flex flex-col lg:flex-row justify-center gap-12 items-stretch">
+        {/* Step 1 */}
+        <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg h-80">
+            <div className="flex items-center justify-center w-16 h-16 bg-gray-700 rounded-full mb-4">
+                <FaStore size={30} className="text-blue-500" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 font-[Inter Tight]">Connect Marketplaces and Storefronts</h3>
+            <p className="text-center text-gray-400 font-[Inter Tight]">
+                Pull all the orders and manage them with Flash.
+            </p>
+            <p className="text-center text-gray-400 font-[Inter Tight]">
+                Streamline your orders seamlessly.
+            </p>
+        </div>
 
-    {/* Step 2 */}
-    <div className="flex items-start max-w-4xl w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg">
-      <FaShippingFast size={60} className="text-green-500 mr-6" />
-      <div className="text-left">
-        <h3 className="text-xl font-semibold mb-2">Ship, Store & Fulfil</h3>
-        <p className="mb-4">Ship your products in bulk with Flash Express and store them globally in our warehouses.</p>
-        {/* Asset Placeholder */}
-        <p className="text-gray-400">Efficient storage and fulfillment solutions.</p>
-      </div>
-    </div>
+        {/* Step 2 */}
+        <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg h-80">
+            <div className="flex items-center justify-center w-16 h-16 bg-gray-700 rounded-full mb-4">
+                <FaShippingFast size={30} className="text-blue-500" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 font-[Inter Tight]">Ship, Store & Fulfill</h3>
+            <p className="text-center text-gray-400 font-[Inter Tight]">
+                Ship your products in bulk with Flash Express and Store it Globally in our Warehouses.
+            </p>
+            <p className="text-center text-gray-400 font-[Inter Tight]">
+                Store it Globally in our Warehouses.
+            </p>
+        </div>
 
-    {/* Step 3 */}
-    <div className="flex items-start max-w-4xl w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg">
-      <FaChartLine size={60} className="text-purple-500 mr-6" />
-      <div className="text-left">
-        <h3 className="text-xl font-semibold mb-2">Grow Your Presence</h3>
-        <p className="mb-4">Ship locally within 2 days and grow your revenue 10X.</p>
-        {/* Asset Placeholder */}
-        <p className="text-gray-400">Expand your market reach effectively.</p>
-      </div>
+        {/* Step 3 */}
+        <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg h-80">
+            <div className="flex items-center justify-center w-16 h-16 bg-gray-700 rounded-full mb-4">
+                <FaChartLine size={30} className="text-blue-500" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2 font-[Inter Tight]">Grow Your Presence</h3>
+            <p className="text-center text-gray-400 font-[Inter Tight]">
+                Ship locally within 2 days and grow your revenue 10X.
+            </p>
+            <p className="text-center text-gray-400 font-[Inter Tight]">
+                Expand your market reach effectively.
+            </p>
+        </div>
     </div>
-  </div>
 </section>
 
-
       {/* New Services Section */}
-<section className="py-16 px-4 bg-black">
+      <section className="py-16 px-4 bg-black">
   <h2 className="text-center text-2xl md:text-3xl font-bold text-white mb-12">
     We will handle everything you need to sell products internationally.
   </h2>
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
     {/* Card 1 */}
-    <div className="flex flex-col items-center bg-black border rounded-lg p-6 shadow-sm">
+    <div className="flex flex-col items-center bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-lg">
       <FaShippingFast size={30} color="#0070f3" className="mb-4" />
       <h3 className="text-lg font-semibold text-white mb-2">Discounted Cross-Border Logistics</h3>
-      <p className="text-gray-700">
+      <p className="text-gray-300">
         Ship items to the US and Europe by air or sea with the lowest pre-negotiated rates.
       </p>
     </div>
 
     {/* Card 2 */}
-    <div className="flex flex-col items-center bg-clack border rounded-lg p-6 shadow-sm">
+    <div className="flex flex-col items-center bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-lg">
       <FaBoxOpen size={30} color="#0070f3" className="mb-4" />
       <h3 className="text-lg font-semibold text-white mb-2">Inventory Handling and Storage</h3>
-      <p className="text-gray-700">
+      <p className="text-gray-300">
         Store inventory at our global fulfillment center for faster and cheaper shipping.
       </p>
     </div>
 
     {/* Card 3 */}
-    <div className="flex flex-col items-center bg-black border rounded-lg p-6 shadow-sm">
+    <div className="flex flex-col items-center bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-lg">
       <FaClipboardList size={30} color="#0070f3" className="mb-4" />
       <h3 className="text-lg font-semibold text-white mb-2">Inventory and Order Management</h3>
-      <p className="text-gray-700">
+      <p className="text-gray-300">
         Track inventory in real-time. Monitor stock levels. Track your orders in one place.
       </p>
     </div>
 
     {/* Card 4 */}
-    <div className="flex flex-col items-center bg-black border rounded-lg p-6 shadow-sm">
+    <div className="flex flex-col items-center bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-lg">
       <FaTruck size={30} color="#0070f3" className="mb-4" />
       <h3 className="text-lg font-semibold text-white mb-2">2-Day Shipping</h3>
-      <p className="text-gray-700">
+      <p className="text-gray-300">
         Guaranteed 2-day shipping across the US is available.
       </p>
     </div>
 
     {/* Card 5 */}
-    <div className="flex flex-col items-center bg-black border rounded-lg p-6 shadow-sm">
+    <div className="flex flex-col items-center bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-lg">
       <FaPeopleCarry size={30} color="#0070f3" className="mb-4" />
       <h3 className="text-lg font-semibold text-white mb-2">D2C Fulfillment</h3>
-      <p className="text-gray-700">
+      <p className="text-gray-300">
         Picking, packing, shipping, tracking, returns, and exchanges all handled.
       </p>
     </div>
 
     {/* Card 6 */}
-    <div className="flex flex-col items-center bg-black border rounded-lg p-6 shadow-sm">
+    <div className="flex flex-col items-center bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-lg">
       <FaWarehouse size={30} color="#0070f3" className="mb-4" />
       <h3 className="text-lg font-semibold text-white mb-2">Wholesale Fulfillment</h3>
-      <p className="text-gray-700">
+      <p className="text-gray-300">
         Ship to your retail buyers while staying compliant according to their SOPs.
       </p>
     </div>
@@ -591,79 +602,77 @@ const HomePage = () => {
 </section>
 
     {/* Testimonial Section */}
-<section className="bg-black py-16 px-4">
+    <section className="bg-black py-16 px-4">
   <h2 className="text-center text-2xl md:text-3xl font-bold text-white mb-2">
     Trusted by category leading brands
   </h2>
   <p className="text-center text-white mb-8">
-    With omnidock, our partners have increased their revenues by up to 50%
+    With flash, our partners have increased their revenues by up to 50%
   </p>
-  <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     
     {/* Testimonial 1 */}
-    <div className="bg-gray-800 text-white p-6 rounded-lg">
-      <p className="mb-6">
-        My focus is fully on Amazon, but I understand theres much more to gain outside of it. Im happy to work with OmniDock to explore other marketplaces and grow my brand.
+    <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col justify-between h-80">
+      <p className="mb-6 flex-grow">
+        My focus is fully on Amazon, but I understand there much more to gain outside of it. Im happy to work with Omnidock to explore other marketplaces and grow my brand.
       </p>
       <div className="flex items-center">
-  <Image
-    className="w-12 h-12 rounded-full mr-4"
-    src="/path/to/nicolai-engeser.jpg"
-    alt="Nicolai Engeser"
-    width={48} // Specify the width in pixels (equivalent to 'w-12' in Tailwind CSS)
-    height={48} // Specify the height in pixels (equivalent to 'h-12' in Tailwind CSS)
-  />
-  <div>
-          <p className="font-bold">Jan Häse</p>
-          <p className="text-sm">Founder Prinox</p>
+        <Image
+          className="w-16 h-16 rounded-full mr-4"
+          src="/path/to/nicolai-engeser.jpg"
+          alt="Jan Häse"
+          width={64}
+          height={64}
+        />
+        <div>
+          <p className="font-bold text-lg">Jan Häse</p>
+          <p className="text-sm text-gray-300">Founder Prinox</p>
         </div>
       </div>
     </div>
 
     {/* Testimonial 2 */}
-    <div className="bg-gray-800 text-white p-6 rounded-lg">
-      <p className="mb-6">
+    <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col justify-between h-80">
+      <p className="mb-6 flex-grow">
         I always wanted to expand to BOL.com, especially since I also lived in the Netherlands in the past and was aware of that marketplaces potential. I am happy that Omnidock approached me and effectively manages that expansion.
       </p>
       <div className="flex items-center">
-  <Image
-    className="w-12 h-12 rounded-full mr-4"
-    src="/path/to/nicolai-engeser.jpg"
-    alt="Nicolai Engeser"
-    width={48} // Specify the width in pixels (equivalent to 'w-12' in Tailwind CSS)
-    height={48} // Specify the height in pixels (equivalent to 'h-12' in Tailwind CSS)
-  />
-  <div>
-          <p className="font-bold">Igor Barbashin</p>
-          <p className="text-sm">Founder Hakuna Matte</p>
+        <Image
+          className="w-16 h-16 rounded-full mr-4"
+          src="/path/to/nicolai-engeser.jpg"
+          alt="Igor Barbashin"
+          width={64}
+          height={64}
+        />
+        <div>
+          <p className="font-bold text-lg">Igor Barbashin</p>
+          <p className="text-sm text-gray-300">Founder Hakuna Matte</p>
         </div>
       </div>
     </div>
 
     {/* Testimonial 3 */}
-    <div className="bg-gray-800 text-white p-6 rounded-lg">
-      <p className="mb-6">
+    <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col justify-between h-80">
+      <p className="mb-6 flex-grow">
         We are determined to develop the best products for our customers and establish our Brand. Partnering with Omnidock allows us to reach additional customers in core markets.
       </p>
       <div className="flex items-center">
-  <Image
-    className="w-12 h-12 rounded-full mr-4"
-    src="/path/to/nicolai-engeser.jpg"
-    alt="Nicolai Engeser"
-    width={48} // Specify the width in pixels (equivalent to 'w-12' in Tailwind CSS)
-    height={48} // Specify the height in pixels (equivalent to 'h-12' in Tailwind CSS)
-  />
-  <div>
-          <p className="font-bold">Nicolai Engeser</p>
-          <p className="text-sm">Founder of Waldwerk</p>
+        <Image
+          className="w-16 h-16 rounded-full mr-4"
+          src="/path/to/nicolai-engeser.jpg"
+          alt="Nicolai Engeser"
+          width={64}
+          height={64}
+        />
+        <div>
+          <p className="font-bold text-lg">Nicolai Engeser</p>
+          <p className="text-sm text-gray-300">Founder of Waldwerk</p>
         </div>
       </div>
     </div>
     
   </div>
 </section>
-
-
 
       {/* FAQ Section */}
 <section className="bg-black py-16 px-4">
@@ -726,70 +735,60 @@ const HomePage = () => {
 </section>
 
       {/* Footer Section */}
-<footer className="bg-gray-900 text-white py-8">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gray-900 text-white py-8">
+  <div className="max-w-6xl mx-auto px-4 sm:px-0 lg:px-0">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-14 py-8">
 
-    {/* Footer Content */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
       {/* Logo and Company Info */}
-      <div className="flex flex-col">
-        <Image
-          src="/flashlogo.png" // Adjust path to match your public directory structure
-          alt="Flash Logo"
-          width={96} // Adjust width to match design
-          height={24} // Adjust height to match design
-          className="mb-4"
-        />
-        <p className="text-sm">Flashport Technologies Private Limited</p>
-        <p className="text-sm">1234 Main Street, City Name, Country</p>
-      </div>
-
-      {/* Links */}
-      <div>
-        <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-        <ul>
-          <li>
-            <a href="/terms-of-service" className="text-sm hover:underline">Terms of Service</a>
-          </li>
-          <li>
-            <a href="/privacy-policy" className="text-sm hover:underline">Privacy Policy</a>
-          </li>
-        </ul>
-      </div>
-
-      {/* Contact Us */}
-      <div>
-        <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
-        <p className="text-sm">Feel free to reach out if you have any questions or need further assistance.</p>
-        <a href="/contact-us" className="text-sm text-white bg-gray-700 px-4 py-2 rounded-md mt-4 inline-block hover:bg-gray-600 transition">
-          Contact Us
-        </a>
-      </div>
-
-      {/* Social Media Links (Optional) */}
-      <div>
-        <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-        <div className="flex space-x-4">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
-            <i className="fab fa-github"></i>
-          </a>
+      <div className="text-left">
+        <Link href="/" passHref>
+          <div className="flex items-center cursor-pointer mb-4">
+            <Image
+              src="/flashlogo.png" 
+              alt="Flash Logo"
+              width={32}
+              height={32}
+              className="mr-4"
+            />
+            <span className="text-white text-lg md:text-xl font-bold">Flash</span>
+          </div>
+        </Link>
+        <div>
+          <p className="text-sm text-white">Flashport Technologies Private Limited</p>
+          <p className="text-sm text-white">1234 Main Street, City Name, Country</p>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul>
+              <li className="mb-2">
+                {/* <Link href="/terms-of-service"> */}
+                  <a className="text-sm hover:underline">Terms of Service</a>
+                
+              </li>
+              <li>
+                {/* <Link href="/privacy-policy"> */}
+                  <a className="text-sm hover:underline">Privacy Policy</a>
+                {/* </Link> */}
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Us */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
+            <a href="/contactus" className="text-sm text-white bg-gray-700 px-4 py-2 rounded-md inline-block hover:bg-gray-600 transition">
+              Contact Us
+            </a>
+            <p className="text-sm mt-4">Feel free to reach out if you have any questions or need further assistance.</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
 
     
     </>
