@@ -125,22 +125,27 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="relative pt-16 pb-24 md:pt-20 md:pb-32  bg-gradient-to-b from-[#000033] to-black/100 text-white">
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
+          <br></br>
     <div className="relative flex items-center bg-white/20 rounded-full px-2 py-1 shadow-md mb-4 border border-transparent w-54 h-10 overflow-hidden">
             <FaRocket className="mr-2 text-white" size={20} />
             <h1 className="text-xs md:text-sm lg:text-base font-medium text-white">
               Next-Generation Inventory Planning Software
             </h1>
+            <br></br>
+            <br></br>
             <div className="absolute inset-0 rounded-full border-4 border-transparent z-0 custom-border-animation"></div>
           </div>
           <div className="text-xs md:text-sm lg:text-base max-w-4xl mx-auto mb-6 font-light leading-relaxed">
             <h1 className="text-2xl md:text-3xl lg:text-6xl font-bold text-white font-[Inter Tight]">
               Sell your Products Globally with <span className="text-blue-500">Flash OS</span>
             </h1>
+            <br></br>
             <p className="mt-2 text-sm md:text-lg font-[Inter Tight] text-blue-200">
               Flash OS supports local brands and sellers to expand into 220+ countries in under 48 hours. We manage your shipping, local compliances, warehousing, returns, payments so you can focus on scaling and growing.
             </p>
 
           </div>
+          <br></br>
           <a
             href="https://calendly.com/parikshit-bhanushali/"
             target="_blank"
@@ -166,6 +171,8 @@ const HomePage = () => {
           <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight]">
             With Flash we make it smooth and simple.
           </h2>
+          <br></br>
+          <br></br>
   <div className="max-w-4xl mx-auto">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center mb-12">
       <div className="bg-gray-800 rounded-lg p-4 md:p-6 mx-4 sm:mx-0">
@@ -202,7 +209,7 @@ const HomePage = () => {
       {/* Infinite Scrolling Logos (Trusted Brands) */}
       
       <section className="py-12 bg-black">
-      <h2 className="text-center text-3xl font-bold mb-8 text-white">Trusted by Leading Marketplaces</h2>
+      <h2 className="text-center text-3xl font-bold mb-8 text-white">Sell across leading marketplaces</h2>
       <div className="overflow-hidden py-6">
         <div
           ref={containerRef}
@@ -420,9 +427,9 @@ const HomePage = () => {
               />
               <div className="mt-6">
                 <h2 className="text-2xl md:text-4xl font-bold mb-2 font-[Inter Tight] text-white">Flash Checkout</h2>
-                <p className="text-gray-400 mt-2">Take your D2C Brand Global</p>
+                <p className="text-gray-300 mt-2">Take your D2C Brand Global</p>
                 <br></br>
-                <p className="text-gray-500 mt-2 space-y-2">
+                <p className="text-gray-400 mt-2 space-y-2">
                   <span className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span> Localized Checkout with Local Payment Methods
                   </span>
@@ -452,9 +459,9 @@ const HomePage = () => {
         />
         <div className="mt-6">
           <h2 className="text-2xl md:text-4xl font-bold mb-2 font-[Inter Tight] text-white">Flash 3PL</h2>
-          <p className="text-gray-400 mt-2">Fulfill your Global Orders with Flash 3PL Network.</p>
+          <p className="text-gray-300 mt-2">Fulfill your Global Orders with Flash 3PL Network.</p>
           <br></br>
-          <p className="text-gray-500 mt-2 space-y-2">
+          <p className="text-gray-400 mt-2 space-y-2">
                   <span className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span> Local Fulfillment and 2 Day Delivery 
                   </span>
@@ -476,12 +483,12 @@ const HomePage = () => {
 
 
     {/* how it works */}
-    <section className="bg-black text-white py-16 px-4 text-center">
+    <section id="howitworks" className="bg-black text-white py-16 px-4 text-center">
     <h2 className="text-3xl font-bold mb-4 font-[Inter Tight]">How It Works</h2>
     <h2 className="text-3xl font-bold mb-12 font-[Inter Tight]">Go Flash in 3 Simple Steps</h2>
-    <div className="flex flex-col lg:flex-row justify-center gap-12 items-stretch">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-12 mx-auto max-w-screen-xl">
         {/* Step 1 */}
-        <div className="flex flex-col items-center justify-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg h-80">
+        <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg">
             <div className="flex items-center justify-center w-16 h-16 bg-gray-700 rounded-full mb-4">
                 <FaStore size={30} className="text-blue-500" />
             </div>
@@ -489,13 +496,11 @@ const HomePage = () => {
             <p className="text-center text-gray-400 font-[Inter Tight]">
                 Pull all the orders and manage them with Flash.
             </p>
-            <p className="text-center text-gray-400 font-[Inter Tight]">
-                Streamline your orders seamlessly.
-            </p>
+            
         </div>
 
         {/* Step 2 */}
-        <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg h-80">
+        <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg">
             <div className="flex items-center justify-center w-16 h-16 bg-gray-700 rounded-full mb-4">
                 <FaShippingFast size={30} className="text-blue-500" />
             </div>
@@ -503,29 +508,26 @@ const HomePage = () => {
             <p className="text-center text-gray-400 font-[Inter Tight]">
                 Ship your products in bulk with Flash Express and Store it Globally in our Warehouses.
             </p>
-            <p className="text-center text-gray-400 font-[Inter Tight]">
-                Store it Globally in our Warehouses.
-            </p>
         </div>
 
         {/* Step 3 */}
-        <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg h-80">
+        <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg">
             <div className="flex items-center justify-center w-16 h-16 bg-gray-700 rounded-full mb-4">
                 <FaChartLine size={30} className="text-blue-500" />
             </div>
             <h3 className="text-xl font-semibold mb-2 font-[Inter Tight]">Grow Your Presence</h3>
+            <br></br>
             <p className="text-center text-gray-400 font-[Inter Tight]">
                 Ship locally within 2 days and grow your revenue 10X.
-            </p>
-            <p className="text-center text-gray-400 font-[Inter Tight]">
-                Expand your market reach effectively.
             </p>
         </div>
     </div>
 </section>
 
+
+
       {/* New Services Section */}
-      <section className="py-16 px-4 bg-black">
+      <section id="services" className="py-16 px-4 bg-black">
   <h2 className="text-center text-2xl md:text-3xl font-bold text-white mb-12">
     We will handle everything you need to sell products internationally.
   </h2>
@@ -660,7 +662,7 @@ const HomePage = () => {
 </section>
 
       {/* FAQ Section */}
-<section className="bg-black py-16 px-4">
+<section id="faqs" className="bg-black py-16 px-4">
   <h2 className="text-center text-2xl md:text-3xl font-bold text-white mb-8">
     Have any questions?
   </h2>

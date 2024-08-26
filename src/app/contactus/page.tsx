@@ -70,7 +70,7 @@ const ContactUsSection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#272c73] to-black/80 text-white">
     
 
       {/* Contact Us Section */}
@@ -197,7 +197,7 @@ const ContactUsSection = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className={`w-full mt-1 px-4 py-2 border rounded-md bg-gray-800 text-white h-32 ${
+                className={`w-full mt-1 px-4 py-2 border rounded-md bg-gray-800 h-32 text-white resize-none ${
                   errors.message ? 'border-red-500' : 'border-gray-600'
                 }`}
                 required

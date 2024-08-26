@@ -25,7 +25,7 @@ const Navbar = () => {
       {/* Desktop Menu Links */}
       <div className="hidden md:flex flex-grow justify-center space-x-8">
         <Link href="#products" className="text-white hover:text-gray-300 transition duration-300">Products</Link>
-        <Link href="#howitworks" className="text-white hover:text-gray-300 transition duration-300">How it Works</Link>
+        <Link  href="#howitworks" className="text-white hover:text-gray-300 transition duration-300">How it Works</Link>
         <Link href="#services" className="text-white hover:text-gray-300 transition duration-300">Services</Link>
         <Link href="#faqs" className="text-white hover:text-gray-300 transition duration-300">FAQs</Link>
       </div>
