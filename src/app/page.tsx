@@ -475,28 +475,13 @@ const HomePage = () => {
 </section>
 
 
-
-      <section style={{ padding: '2rem 1rem', textAlign: 'center', backgroundColor: 'black' }}>
-      <h1 style={{ color: 'white' }}>Improve Profitability with Flash Returns</h1>
-      <p style={{ color: 'white' }}>Connect 50+ Marketplaces and Fulfill Orders</p>
-      <div style={{ marginTop: '2rem', position: 'relative', width: '100%', height: '300px' }}>
-        <Image
-          src="https://via.placeholder.com/500"
-          alt="Illustration of orders connecting and shipping"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
-    </section>
-
-
     {/* how it works */}
     <section className="bg-black text-white py-16 px-4 text-center">
     <h2 className="text-3xl font-bold mb-4 font-[Inter Tight]">How It Works</h2>
     <h2 className="text-3xl font-bold mb-12 font-[Inter Tight]">Go Flash in 3 Simple Steps</h2>
     <div className="flex flex-col lg:flex-row justify-center gap-12 items-stretch">
         {/* Step 1 */}
-        <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg h-80">
+        <div className="flex flex-col items-center justify-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg h-80">
             <div className="flex items-center justify-center w-16 h-16 bg-gray-700 rounded-full mb-4">
                 <FaStore size={30} className="text-blue-500" />
             </div>
