@@ -772,7 +772,7 @@ const HomePage = () => {
       {/* Logo and Company Info */}
       <div className="flex flex-col">
         <Image
-          src="/flash.png" // Adjust path to match your public directory structure
+          src="/flashlogo.png" // Adjust path to match your public directory structure
           alt="Flash Logo"
           width={96} // Adjust width to match design
           height={24} // Adjust height to match design
