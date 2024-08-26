@@ -129,7 +129,7 @@ const HomePage = () => {
     <div className="relative flex items-center bg-white/20 rounded-full px-2 py-1 shadow-md mb-4 border border-transparent w-54 h-10 overflow-hidden">
             <FaRocket className="mr-2 text-white" size={20} />
             <h1 className="text-xs md:text-sm lg:text-base font-medium text-white">
-              Next-Generation Inventory Planning Software
+              Next-Gen global trade platform
             </h1>
             <br></br>
             <br></br>
