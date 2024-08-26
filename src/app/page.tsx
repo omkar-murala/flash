@@ -120,10 +120,8 @@ const HomePage = () => {
   return (
     // <Navbar />
       <>
-      
-      
       {/* Hero Section */}
-      <section className="relative pt-16 pb-24 md:pt-20 md:pb-32  bg-gradient-to-b from-[#000033] to-black/80 text-white">
+      <section className="relative pt-16 pb-24 md:pt-20 md:pb-32  bg-gradient-to-b from-[#000033] to-black/100 text-white">
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
     <div className="relative flex items-center bg-white/20 rounded-full px-2 py-1 shadow-md mb-4 border border-transparent w-54 h-10 overflow-hidden">
             <FaRocket className="mr-2 text-white" size={20} />
@@ -133,18 +131,19 @@ const HomePage = () => {
             <div className="absolute inset-0 rounded-full border-4 border-transparent z-0 custom-border-animation"></div>
           </div>
           <div className="text-xs md:text-sm lg:text-base max-w-4xl mx-auto mb-6 font-light leading-relaxed">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white font-[Inter Tight]">
+            <h1 className="text-2xl md:text-3xl lg:text-6xl font-bold text-white font-[Inter Tight]">
               Sell your Products Globally with <span className="text-blue-500">Flash OS</span>
             </h1>
-            <p className="mt-2 text-xs md:text-sm font-[Inter Tight] text-blue-200">
+            <p className="mt-2 text-sm md:text-lg font-[Inter Tight] text-blue-200">
               Flash OS supports local brands and sellers to expand into 220+ countries in under 48 hours. We manage your shipping, local compliances, warehousing, returns, payments so you can focus on scaling and growing.
             </p>
+
           </div>
           <a
             href="https://calendly.com/parikshit-bhanushali/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-black font-semibold py-3 px-6 rounded hover:bg-yellow-300 transition duration-300"
+            className="bg-[#1c1c78] text-white font-semibold py-3 px-6 rounded hover:bg-[#000044] transition duration-300"
           >
             Book a Demo
           </a>
@@ -158,9 +157,9 @@ const HomePage = () => {
 
 
       {/* Graph Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-black/80 to-black text-white">
-  <h2 className="text-center text-3xl md:text-4xl font-bold mb-8">Selling Globally has always been Hard. With Flash we make it smooth and simple.</h2>
-
+      <section className="py-16 px-4 bg-gradient-to-b from-[#000000] to-black/100 text-white">
+  <h2 className="text-center text-3xl md:text-4xl font-bold mb-8">Selling Globally has always been Hard.</h2>
+    <h2 className="text-center text-3xl md:text-4xl font-bold mb-8">With Flash we make it smooth and simple.</h2>
   <div className="max-w-4xl mx-auto">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center mb-12">
       <div className="bg-gray-800 rounded-lg p-4 md:p-6 mx-4 sm:mx-0">
@@ -179,7 +178,7 @@ const HomePage = () => {
 
       <div className="bg-gray-800 rounded-lg p-4 md:p-6 mx-4 sm:mx-0">
         <h3 className="text-base md:text-lg font-medium">Gross Sales (28 days)</h3>
-        <p className="text-xl md:text-2xl font-bold">112,077.09₹</p>
+        <p className="text-xl md:text-2xl font-bold">₹112,077.09</p>
         <p className="text-green-400 text-base md:text-lg">↑21.68%</p>
         <p className="text-gray-400 text-sm">to last 28 days</p>
       </div>
@@ -214,10 +213,10 @@ const HomePage = () => {
         >
           <div className="flex-shrink-0">
             <Image
-              src="/amazon.png"
+              src="/1amazon.png"
               alt="Amazon logo"
               width={150}
-              height={75}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
@@ -226,16 +225,16 @@ const HomePage = () => {
               src="/download.png"
               alt="eBay logo"
               width={150}
-              height={75}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
           <div className="flex-shrink-0">
             <Image
-              src="/etsy.png"
+              src="/1etsy.png"
               alt="Etsy logo"
-              width={150}
-              height={75}
+              width={60}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
@@ -244,7 +243,7 @@ const HomePage = () => {
               src="/walmart.png"
               alt="Walmart logo"
               width={150}
-              height={75}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
@@ -253,7 +252,7 @@ const HomePage = () => {
               src="/wayfair.png"
               alt="Wayfair logo"
               width={150}
-              height={75}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
@@ -262,7 +261,7 @@ const HomePage = () => {
               src="/noon.png"
               alt="Noon logo"
               width={150}
-              height={75}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
@@ -271,7 +270,7 @@ const HomePage = () => {
               src="/zalando.png"
               alt="Zalando logo"
               width={150}
-              height={75}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
@@ -279,17 +278,17 @@ const HomePage = () => {
             <Image
               src="/shopify.png"
               alt="Shopify logo"
-              width={150}
-              height={75}
+              width={60}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
           <div className="flex-shrink-0">
             <Image
-              src="/WooCommerce.png"
+              src="/1WooCommerce.png"
               alt="WooCommerce logo"
               width={150}
-              height={75}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
@@ -298,7 +297,7 @@ const HomePage = () => {
               src="/BigCommerce.png"
               alt="BigCommerce logo"
               width={150}
-              height={75}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
@@ -306,7 +305,7 @@ const HomePage = () => {
           {/* Duplicate the logos to ensure continuous scrolling */}
           <div className="flex-shrink-0">
             <Image
-              src="/amazon.png"
+              src="/1amazon.png"
               alt="Amazon logo"
               width={150}
               height={75}
@@ -324,9 +323,9 @@ const HomePage = () => {
           </div>
           <div className="flex-shrink-0">
             <Image
-              src="/etsy.png"
+              src="/1etsy.png"
               alt="Etsy logo"
-              width={150}
+              width={60}
               height={75}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
@@ -371,14 +370,14 @@ const HomePage = () => {
             <Image
               src="/Shopify.png"
               alt="Shopify logo"
-              width={150}
-              height={75}
+              width={60}
+              height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
           <div className="flex-shrink-0">
             <Image
-              src="/WooCommerce.png"
+              src="/1WooCommerce.png"
               alt="WooCommerce logo"
               width={150}
               height={75}
@@ -398,94 +397,33 @@ const HomePage = () => {
       </div>
     </section>
 
-      {/* Our Products Section
-      <section id="products" className="py-16 px-4 bg-black">
+      {/* Our Products Section */}
+      <section id="products" className="py-16 px-4 bg-gradient-to-b from-black to-black/100">
         <h2 className="text-center text-4xl font-bold text-white mb-12">Our Products</h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           
-          <div className="flex flex-col lg:flex-row items-center bg-black shadow-lg rounded-lg overflow-hidden">
-            <div className="lg:w-1/2">
+          {/* Product 1 - Flash Checkout */}
+          <div className="bg-[#1a1a2e] rounded-xl overflow-hidden shadow-lg">
+            <div className="bg-[#0f0f1a] p-6 rounded-lg">
               <Image
-                src="https://via.placeholder.com/500" // Replace with actual image URL
+                src="/razorpay.png" // Replace with actual image URL
                 alt="Flash Checkout"
                 width={500}
                 height={500}
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full rounded-lg"
               />
-            </div>
-            <div className="lg:w-1/2 p-8">
-              <h2 className="text-3xl font-bold text-white mb-4">Flash Checkout</h2>
-              <p className="text-gray-300 mb-4">
-                Take your D2C Brand Global
-              </p>
-              <p className="text-gray-400 mb-4">
-                Localized Checkout with Local Payment Methods<br />
-                Local Compliances, Taxes and Duties Handled<br />
-                Go Live in any country with MOR Model<br />
-                Ship Across 220+ countries with Flash Express
-              </p>
-              <button className="mt-6 bg-white text-black py-2 px-6 rounded hover:bg-gray-300 transition duration-300">
-                Get Started
-              </button>
+              <div className="mt-6">
+                <h2 className="text-x1 font-bold text-white">Flash Checkout</h2>
+                <p className="text-gray-400 mt-2">Take your D2C Brand Global</p>
+                <p className="text-gray-500 mt-2">
+                  Localized Checkout with Local Payment Methods<br />
+                  Local Compliances, Taxes and Duties Handled<br />
+                  Go Live in any country with MOR Model<br />
+                  Ship Across 220+ countries with Flash Express
+                </p>
+              </div>
             </div>
           </div>
-
-          
-          <div className="flex flex-col lg:flex-row items-center bg-black shadow-lg rounded-lg overflow-hidden">
-            <div className="lg:w-1/2">
-              <Image
-                src="https://via.placeholder.com/500" // Replace with actual image URL
-                alt="Flash 3PL"
-                width={500}
-                height={500}
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="lg:w-1/2 p-8">
-              <h2 className="text-3xl font-bold text-white mb-4">Flash 3PL</h2>
-              <p className="text-gray-300 mb-4">
-                Fulfill your Global Orders with Flash 3PL Network.
-              </p>
-              <p className="text-gray-400 mb-4">
-                Use Our Warehouse Network in 220+ countries to fulfill your Orders in Local Market.<br />
-                Compliances, Returns Management, Local Payments all handled by us.
-              </p>
-              <button className="mt-6 bg-white text-black py-2 px-6 rounded hover:bg-gray-300 transition duration-300">
-                Get Started
-              </button>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Our Products Section */}
-      {/* Our Products Section */}
-<section id="products" className="py-16 px-4 bg-gradient-to-b from-black to-black/80">
-  <h2 className="text-center text-4xl font-bold text-white mb-12">Our Products</h2>
-  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-    
-    {/* Product 1 - Flash Checkout */}
-    <div className="bg-[#1a1a2e] rounded-xl overflow-hidden shadow-lg">
-      <div className="bg-[#0f0f1a] p-6 rounded-lg">
-        <Image
-          src="/razorpay.png" // Replace with actual image URL
-          alt="Flash Checkout"
-          width={500}
-          height={500}
-          className="object-cover w-full h-full rounded-lg"
-        />
-        <div className="mt-6">
-          <h2 className="text-xl font-bold text-white">Flash Checkout</h2>
-          <p className="text-gray-400 mt-2">Take your D2C Brand Global</p>
-          <p className="text-gray-500 mt-2">
-            Localized Checkout with Local Payment Methods<br />
-            Local Compliances, Taxes and Duties Handled<br />
-            Go Live in any country with MOR Model<br />
-            Ship Across 220+ countries with Flash Express
-          </p>
-        </div>
-      </div>
-    </div>
 
     {/* Product 2 - Flash 3PL */}
     <div className="bg-[#1a1a2e] rounded-xl overflow-hidden shadow-lg">
@@ -513,8 +451,8 @@ const HomePage = () => {
 
 
       <section style={{ padding: '2rem 1rem', textAlign: 'center', backgroundColor: 'black' }}>
-      <h1>Improve Profitability with Flash Returns</h1>
-      <p>Connect 50+ Marketplaces and Fulfill Orders</p>
+      <h1 style={{ color: 'white' }}>Improve Profitability with Flash Returns</h1>
+      <p style={{ color: 'white' }}>Connect 50+ Marketplaces and Fulfill Orders</p>
       <div style={{ marginTop: '2rem', position: 'relative', width: '100%', height: '300px' }}>
         <Image
           src="https://via.placeholder.com/500"
