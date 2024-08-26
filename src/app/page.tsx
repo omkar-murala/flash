@@ -594,7 +594,7 @@ const HomePage = () => {
     Trusted by category leading brands
   </h2>
   <p className="text-center text-white mb-8">
-    With flash, our partners have increased their revenues by up to 50%
+    With flash, our customers are growing their revenues and scaling globally
   </p>
   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     
