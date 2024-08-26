@@ -158,8 +158,12 @@ const HomePage = () => {
 
       {/* Graph Section */}
       <section className="py-16 px-4 bg-gradient-to-b from-[#000000] to-black/100 text-white">
-  <h2 className="text-center text-3xl md:text-4xl font-bold mb-8">Selling Globally has always been Hard.</h2>
-    <h2 className="text-center text-3xl md:text-4xl font-bold mb-8">With Flash we make it smooth and simple.</h2>
+      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight]">
+            Selling Globally has always been Hard.
+          </h2>
+          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight]">
+            With Flash we make it smooth and simple.
+          </h2>
   <div className="max-w-4xl mx-auto">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center mb-12">
       <div className="bg-gray-800 rounded-lg p-4 md:p-6 mx-4 sm:mx-0">
@@ -413,13 +417,22 @@ const HomePage = () => {
                 className="object-cover w-full h-full rounded-lg"
               />
               <div className="mt-6">
-                <h2 className="text-x1 font-bold text-white">Flash Checkout</h2>
+                <h2 className="text-2xl md:text-4xl font-bold mb-2 font-[Inter Tight] text-white">Flash Checkout</h2>
                 <p className="text-gray-400 mt-2">Take your D2C Brand Global</p>
-                <p className="text-gray-500 mt-2">
-                  Localized Checkout with Local Payment Methods<br />
-                  Local Compliances, Taxes and Duties Handled<br />
-                  Go Live in any country with MOR Model<br />
-                  Ship Across 220+ countries with Flash Express
+                <br></br>
+                <p className="text-gray-500 mt-2 space-y-2">
+                  <span className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span> Localized Checkout with Local Payment Methods
+                  </span>
+                  <span className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span> Local Compliances, Taxes and Duties Handled
+                  </span>
+                  <span className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span> Go Live in any country with MOR Model
+                  </span>
+                  <span className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span> Ship Across 220+ countries with Flash Express
+                  </span>
                 </p>
               </div>
             </div>
@@ -429,19 +442,30 @@ const HomePage = () => {
     <div className="bg-[#1a1a2e] rounded-xl overflow-hidden shadow-lg">
       <div className="bg-[#0f0f1a] p-6 rounded-lg">
         <Image
-          src="/3pay.png" // Replace with actual image URL
+          src="/razorpay.png" // Replace with actual image URL
           alt="Flash 3PL"
           width={500}
           height={500}
           className="object-cover w-full h-full rounded-lg"
         />
         <div className="mt-6">
-          <h2 className="text-xl font-bold text-white">Flash 3PL</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-2 font-[Inter Tight] text-white">Flash 3PL</h2>
           <p className="text-gray-400 mt-2">Fulfill your Global Orders with Flash 3PL Network.</p>
-          <p className="text-gray-500 mt-2">
-            Use Our Warehouse Network in 220+ countries to fulfill your Orders in Local Market.<br />
-            Compliances, Returns Management, Local Payments all handled by us.
-          </p>
+          <br></br>
+          <p className="text-gray-500 mt-2 space-y-2">
+                  <span className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span> Local Fulfillment and 2 Day Delivery 
+                  </span>
+                  <span className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span> Global Warehousing and Door to Door Delivery
+                  </span>
+                  <span className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span> Improve Probitability with Flash Returns
+                  </span>
+                  <span className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span> Connect 50+ Marketplace and Fullfil Orders
+                  </span>
+                </p>
         </div>
       </div>
     </div>
