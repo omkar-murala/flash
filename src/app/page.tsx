@@ -588,7 +588,7 @@ const HomePage = () => {
 
     {/* Testimonial Section */}
     <section className="bg-black py-16 px-4">
-  <h2 className="text-center text-2xl md:text-3xl font-bold text-white mb-2">
+  <h2 className="text-center md:text-3xl text-3xl lg:text-4xl font-bold mb-2 text-white">
     Trusted by category leading brands
   </h2>
   <p className="text-center text-white mb-8">
@@ -596,8 +596,8 @@ const HomePage = () => {
   </p>
 
   {/* First Row - Three Image Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-center">
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center items-center">
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto lg:mx-0">
       <Image
         className="w-full h-full object-contain rounded-lg"
         src="/keroblack.png"
@@ -607,7 +607,7 @@ const HomePage = () => {
       />
     </div>
 
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto lg:mx-0">
       <Image
         className="w-full h-full object-contain rounded-lg"
         src="/cbaz.png"
@@ -617,7 +617,7 @@ const HomePage = () => {
       />
     </div>
 
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto lg:mx-0">
       <Image
         className="w-full h-full object-contain rounded-lg"
         src="/png.jpg"
@@ -629,8 +629,8 @@ const HomePage = () => {
   </div>
 
   {/* Second Row - Two Centered Image Cards */}
-  <div className="flex justify-center mt-8 space-x-12">
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center mt-8 md:pl-36">
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto md:mx-0">
       <Image
         className="w-full h-full object-contain rounded-lg"
         src="/belizon.png"
@@ -640,7 +640,7 @@ const HomePage = () => {
       />
     </div>
 
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto md:mx-0">
       <Image
         className="w-full h-full object-contain rounded-lg"
         src="/hijab black.png"
@@ -656,9 +656,12 @@ const HomePage = () => {
 
 
 
+
+
+
       {/* FAQ Section */}
 <section id="faqs" className="bg-black py-16 px-4">
-  <h2 className="text-center text-2xl md:text-3xl font-bold text-white mb-8">
+  <h2 className="text-center text-3xl lg:text-4xl font-bold mb-2  font-[Inter Tight md:text-3xl  text-white mb-8">
     Have any questions?
   </h2>
   <div className="max-w-2xl mx-auto">
