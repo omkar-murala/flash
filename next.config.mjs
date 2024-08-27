@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: ['via.placeholder.com'], // Add allowed domains here
-    },
-  };
+  reactStrictMode: true,
+  // Removed the 'images.domains' configuration since you're using local images
+};
+
 export default nextConfig;
