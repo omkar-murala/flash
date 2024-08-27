@@ -126,15 +126,13 @@ const HomePage = () => {
       <section className="relative pt-16 pb-24 md:pt-20 md:pb-32  bg-gradient-to-b from-[#000033] to-black/100 text-white">
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
           <br></br>
-    <div className="relative flex items-center bg-white/20 rounded-full px-2 py-1 shadow-md mb-4 border border-transparent w-54 h-10 overflow-hidden">
-            <FaRocket className="mr-2 text-white" size={20} />
-            <h1 className="text-xs md:text-sm lg:text-base font-medium text-white">
-              Next-Gen global trade platform
-            </h1>
-            <br></br>
-            <br></br>
-            <div className="absolute inset-0 rounded-full border-4 border-transparent z-0 custom-border-animation"></div>
-          </div>
+          <div className="relative flex items-center bg-white/20 rounded-full px-2 py-1 shadow-md mb-4 border border-transparent w-54 h-10 overflow-hidden">
+  <FaRocket className="mr-2 text-white" size={20} />
+  <h1 className="text-xs md:text-sm lg:text-base font-medium text-white">
+    Next-Gen global trade platform
+  </h1>
+  <div className="absolute inset-0 border-2  rounded-full z-0 animate-rotate-border"></div>
+</div>
           <div className="text-xs md:text-sm lg:text-base max-w-4xl mx-auto mb-6 font-light leading-relaxed">
             <h1 className="text-2xl md:text-3xl lg:text-6xl font-bold text-white font-[Inter Tight]">
               Sell your Products Globally with <span className="text-blue-500">Flash OS</span>
@@ -206,10 +204,10 @@ const HomePage = () => {
 
 
 
-      {/* Infinite Scrolling Logos (Trusted Brands) */}
+      {/* Infinite Scrolling Logos (Trusted Brands)   text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight]*/}
       
       <section className="py-12 bg-black">
-      <h2 className="text-center text-3xl font-bold mb-8 text-white">Sell across leading marketplaces</h2>
+      <h2 className="text-center text-3xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight] text-white">Sell across leading marketplaces</h2>
       <div className="overflow-hidden py-6">
         <div
           ref={containerRef}
@@ -412,7 +410,7 @@ const HomePage = () => {
 
       {/* Our Products Section */}
       <section id="products" className="py-16 px-4 bg-gradient-to-b from-black to-black/100">
-        <h2 className="text-center text-4xl font-bold text-white mb-12">Our Products</h2>
+        <h2 className="text-center md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight] text-white mb-12">Our Products</h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           
           {/* Product 1 - Flash Checkout */}
@@ -484,7 +482,7 @@ const HomePage = () => {
 
     {/* how it works */}
     <section id="howitworks" className="bg-black text-white py-16 px-4 text-center">
-    <h2 className="text-3xl font-bold mb-4 font-[Inter Tight]">How It Works</h2>
+    <h2 className=" md:text-3xl lg:text-4xl font-bold mb-2  font-[Inter Tight]">How It Works</h2>
     <h2 className="text-3xl font-bold mb-12 font-[Inter Tight]">Go Flash in 3 Simple Steps</h2>
     <div className="flex flex-col lg:flex-row justify-center items-center gap-12 mx-auto max-w-screen-xl">
         {/* Step 1 */}
