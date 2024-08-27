@@ -237,7 +237,7 @@ const ContactUsSection = () => {
         </Link>
         <div>
           <p className="text-sm text-white">Flashport Technologies Private Limited</p>
-          <p className="text-sm text-white">1234 Main Street, City Name, Country</p>
+          <p className="text-sm text-white">Made with ❤️ In India for the World</p>
         </div>
       </div>
 
