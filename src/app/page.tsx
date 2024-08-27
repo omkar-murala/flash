@@ -17,7 +17,8 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { FaBoxOpen, FaChartLine, FaClipboardList, FaPeopleCarry, FaRocket, FaShippingFast, FaStore, FaTruck, FaWarehouse } from 'react-icons/fa';
-
+// import InfiniteScrollCarousel from "../components/scrolleffect/scroll";
+import Scroll from '../components/scrolleffect/Scroll';
 
 ChartJS.register(
   CategoryScale,
@@ -129,7 +130,7 @@ const HomePage = () => {
           <div className="relative flex items-center bg-white/20 rounded-full px-2 py-1 shadow-md mb-4 border border-transparent w-54 h-10 overflow-hidden">
   <FaRocket className="mr-2 text-white" size={20} />
   <h1 className="text-xs md:text-sm lg:text-base font-medium text-white">
-    Next-Gen global trade platform
+    Next-Gen Global Trade Platform
   </h1>
   <div className="absolute inset-0 border-2  rounded-full z-0 animate-rotate-border"></div>
 </div>
@@ -166,7 +167,7 @@ const HomePage = () => {
       <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight]">
             Selling Globally has always been Hard.
           </h2>
-          <h2 className="text-center text-xl md:text-2xl lg:text-2xl font-medium mb-2 font-[Inter Tight]">
+          <h2 className="text-center mt-2 text-sm md:text-lg font-[Inter Tight] text-white">
             With Flash we make it smooth and simple.
           </h2>
           <br></br>
@@ -206,7 +207,7 @@ const HomePage = () => {
 
       {/* Infinite Scrolling Logos (Trusted Brands)   text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight]*/}
       
-      <section className="py-12 bg-black">
+      {/* <section className="py-12 bg-black">
       <h2 className="text-center text-3xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight] text-white">Sell across leading marketplaces</h2>
       <div className="overflow-hidden py-6">
         <div
@@ -258,7 +259,7 @@ const HomePage = () => {
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
-          <div className="flex-shrink-0">
+          {/* <div className="flex-shrink-0">
             <Image
               src="/wayfair.png"
               alt="Wayfair logo"
@@ -266,7 +267,7 @@ const HomePage = () => {
               height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
-          </div>
+          </div> 
           <div className="flex-shrink-0">
             <Image
               src="/noon.png"
@@ -276,7 +277,7 @@ const HomePage = () => {
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
-          <div className="flex-shrink-0">
+          {/* <div className="flex-shrink-0">
             <Image
               src="/zalando.png"
               alt="Zalando logo"
@@ -284,8 +285,8 @@ const HomePage = () => {
               height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
-          </div>
-          <div className="flex-shrink-0">
+          </div> 
+          {/* <div className="flex-shrink-0">
             <Image
               src="/shopify.png"
               alt="Shopify logo"
@@ -293,7 +294,7 @@ const HomePage = () => {
               height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
-          </div>
+          </div> 
           <div className="flex-shrink-0">
             <Image
               src="/1WooCommerce.png"
@@ -313,7 +314,7 @@ const HomePage = () => {
             />
           </div>
 
-          {/* Duplicate the logos to ensure continuous scrolling */}
+   
           <div className="flex-shrink-0">
             <Image
               src="/1amazon.png"
@@ -358,7 +359,7 @@ const HomePage = () => {
               height={75}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
-          </div>
+          </div> 
           <div className="flex-shrink-0">
             <Image
               src="/noon.png"
@@ -368,7 +369,7 @@ const HomePage = () => {
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
           </div>
-          <div className="flex-shrink-0">
+          {/* <div className="flex-shrink-0">
             <Image
               src="/Zalando.png"
               alt="Zalando logo"
@@ -376,8 +377,8 @@ const HomePage = () => {
               height={75}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
-          </div>
-          <div className="flex-shrink-0">
+          </div> 
+          {/* <div className="flex-shrink-0">
             <Image
               src="/Shopify.png"
               alt="Shopify logo"
@@ -385,7 +386,7 @@ const HomePage = () => {
               height={30}
               className="transition-transform duration-300 transform grayscale hover:grayscale-0 hover:scale-110"
             />
-          </div>
+          </div> 
           <div className="flex-shrink-0">
             <Image
               src="/1WooCommerce.png"
@@ -406,11 +407,13 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </section>
-
+    </section> */}
+    {/* <InfiniteScrollCarousel/> */}
+    <Scroll/>
       {/* Our Products Section */}
       <section id="products" className="py-16 px-4 bg-gradient-to-b from-black to-black/100">
         <h2 className="text-center md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight] text-white mb-12">Our Products</h2>
+        <br></br>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           
           {/* Product 1 - Flash Checkout */}
@@ -483,7 +486,7 @@ const HomePage = () => {
     {/* how it works */}
     <section id="howitworks" className="bg-black text-white py-16 px-4 text-center">
     <h2 className=" md:text-3xl lg:text-4xl font-bold mb-2  font-[Inter Tight]">How It Works</h2>
-    <h2 className="text-3xl font-bold mb-12 font-[Inter Tight]">Go Flash in 3 Simple Steps</h2>
+    <h2 className="mt-2 text-sm md:text-lg font-[Inter Tight] text-white">Go Flash in 3 Simple Steps</h2>
     <div className="flex flex-col lg:flex-row justify-center items-center gap-12 mx-auto max-w-screen-xl">
         {/* Step 1 */}
         <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg">

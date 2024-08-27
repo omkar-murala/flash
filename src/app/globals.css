@@ -30,8 +30,27 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-scroll-horizontal {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    animation: scroll-horizontal 20s linear infinite;
+  }
+
+  .scroll-inner {
+    display: flex;
+    flex: 1;
+    min-width: 100%;
+  }
 }
-
-
-
-
