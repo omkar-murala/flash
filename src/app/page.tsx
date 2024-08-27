@@ -596,70 +596,67 @@ const HomePage = () => {
   <p className="text-center text-white mb-8">
     With flash, our customers are growing their revenues and scaling globally
   </p>
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    
-    {/* Testimonial 1 */}
-    <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col justify-between h-80">
-      <p className="mb-6 flex-grow">
-        My focus is fully on Amazon, but I understand there much more to gain outside of it. Im happy to work with Omnidock to explore other marketplaces and grow my brand.
-      </p>
-      <div className="flex items-center">
-        <Image
-          className="w-16 h-16 rounded-full mr-4"
-          src="/path/to/nicolai-engeser.jpg"
-          alt="Jan Häse"
-          width={64}
-          height={64}
-        />
-        <div>
-          <p className="font-bold text-lg">Jan Häse</p>
-          <p className="text-sm text-gray-300">Founder Prinox</p>
-        </div>
-      </div>
+
+  {/* First Row - Three Image Cards */}
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-center">
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+      <Image
+        className="w-full h-full object-contain rounded-lg"
+        src="/keroblack.png"
+        alt="Image 1"
+        width={300}
+        height={300}
+      />
     </div>
 
-    {/* Testimonial 2 */}
-    <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col justify-between h-80">
-      <p className="mb-6 flex-grow">
-        I always wanted to expand to BOL.com, especially since I also lived in the Netherlands in the past and was aware of that marketplaces potential. I am happy that Omnidock approached me and effectively manages that expansion.
-      </p>
-      <div className="flex items-center">
-        <Image
-          className="w-16 h-16 rounded-full mr-4"
-          src="/path/to/nicolai-engeser.jpg"
-          alt="Igor Barbashin"
-          width={64}
-          height={64}
-        />
-        <div>
-          <p className="font-bold text-lg">Igor Barbashin</p>
-          <p className="text-sm text-gray-300">Founder Hakuna Matte</p>
-        </div>
-      </div>
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+      <Image
+        className="w-full h-full object-contain rounded-lg"
+        src="/cbaz.png"
+        alt="Image 2"
+        width={300}
+        height={300}
+      />
     </div>
 
-    {/* Testimonial 3 */}
-    <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col justify-between h-80">
-      <p className="mb-6 flex-grow">
-        We are determined to develop the best products for our customers and establish our Brand. Partnering with Omnidock allows us to reach additional customers in core markets.
-      </p>
-      <div className="flex items-center">
-        <Image
-          className="w-16 h-16 rounded-full mr-4"
-          src="/path/to/nicolai-engeser.jpg"
-          alt="Nicolai Engeser"
-          width={64}
-          height={64}
-        />
-        <div>
-          <p className="font-bold text-lg">Nicolai Engeser</p>
-          <p className="text-sm text-gray-300">Founder of Waldwerk</p>
-        </div>
-      </div>
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+      <Image
+        className="w-full h-full object-contain rounded-lg"
+        src="/png.jpg"
+        alt="Image 3"
+        width={300}
+        height={300}
+      />
     </div>
-    
+  </div>
+
+  {/* Second Row - Two Centered Image Cards */}
+  <div className="flex justify-center mt-8 space-x-12">
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+      <Image
+        className="w-full h-full object-contain rounded-lg"
+        src="/belizon.png"
+        alt="Image 4"
+        width={300}
+        height={300}
+      />
+    </div>
+
+    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-80">
+      <Image
+        className="w-full h-full object-contain rounded-lg"
+        src="/hijab black.png"
+        alt="Image 5"
+        width={300}
+        height={300}
+      />
+    </div>
   </div>
 </section>
+
+
+
+
 
       {/* FAQ Section */}
 <section id="faqs" className="bg-black py-16 px-4">
