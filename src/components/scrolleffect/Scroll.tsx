@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 
@@ -56,9 +55,9 @@ const InfiniteScrollCarousel = () => {
         Sell across leading marketplaces
       </h2>
       <div className="overflow-hidden py-6" ref={scrollContainerRef}>
-        <div className="flex items-center space-x-0 px-4" style={{ width: 'max-content' }}>
+        <div className="flex items-center space-x-4 px-4" style={{ width: 'max-content' }}>
           {images.concat(images).map((src, index) => (
-            <div key={index} className="flex-shrink-0">
+            <div key={index} className="flex-shrink-0 mx-2">
               <Image
                 src={src}
                 alt={`Logo ${index}`}
@@ -69,7 +68,7 @@ const InfiniteScrollCarousel = () => {
             </div>
           ))}
           {images.concat(images).map((src, index) => ( // Second set for seamless loop
-            <div key={index + images.length} className="flex-shrink-0">
+            <div key={index + images.length} className="flex-shrink-0 mx-2">
               <Image
                 src={src}
                 alt={`Logo ${index}`}
