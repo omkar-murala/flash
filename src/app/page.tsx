@@ -168,7 +168,7 @@ const HomePage = () => {
       <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight]">
             Selling Globally has always been Hard.
           </h2>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight]">
+          <h2 className="text-center text-xl md:text-2xl lg:text-2xl font-medium mb-2 font-[Inter Tight]">
             With Flash we make it smooth and simple.
           </h2>
           <br></br>
