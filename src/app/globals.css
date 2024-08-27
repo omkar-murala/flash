@@ -45,12 +45,34 @@ body {
     width: 100%;
     overflow: hidden;
     position: relative;
-    animation: scroll-horizontal 20s linear infinite;
+    animation: scroll-horizontal 40s linear infinite; /* Slow down the scroll */
   }
 
   .scroll-inner {
     display: flex;
     flex: 1;
     min-width: 100%;
+  }
+
+  @keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Full width of the container */
+  }
+  
+  .scroll-content {
+    display: flex;
+    width: 200%; /* Double the width to accommodate continuous scrolling */
+    animation: scroll-horizontal 40s linear infinite; /* Adjust timing for scroll speed */
   }
 }

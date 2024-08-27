@@ -18,6 +18,7 @@ import { useEffect, useRef, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { FaBoxOpen, FaChartLine, FaClipboardList, FaPeopleCarry, FaRocket, FaShippingFast, FaStore, FaTruck, FaWarehouse } from 'react-icons/fa';
 // import InfiniteScrollCarousel from "../components/scrolleffect/scroll";
+import Infinite from '@/components/Brandscroll/Brand';
 import Scroll from '../components/scrolleffect/Scroll';
 
 ChartJS.register(
@@ -217,7 +218,7 @@ const HomePage = () => {
           <div className="bg-[#1a1a2e] rounded-xl overflow-hidden shadow-lg">
             <div className="bg-[#0f0f1a] p-6 rounded-lg">
               <Image
-                src="/razorpay.png" // Replace with actual image URL
+                src="/FORFLASH.jpg" // Replace with actual image URL
                 alt="Flash Checkout"
                 width={500}
                 height={500}
@@ -249,7 +250,7 @@ const HomePage = () => {
     <div className="bg-[#1a1a2e] rounded-xl overflow-hidden shadow-lg">
       <div className="bg-[#0f0f1a] p-6 rounded-lg">
         <Image
-          src="/razorpay.png" // Replace with actual image URL
+          src="/3pl.jpg" // Replace with actual image URL
           alt="Flash 3PL"
           width={500}
           height={500}
@@ -284,6 +285,8 @@ const HomePage = () => {
     <section id="howitworks" className="bg-black text-white py-16 px-4 text-center">
     <h2 className=" md:text-3xl lg:text-4xl font-bold mb-2  font-[Inter Tight]">How It Works</h2>
     <h2 className="mt-2 text-sm md:text-lg font-[Inter Tight] text-white">Go Flash in 3 Simple Steps</h2>
+    <br></br>
+    <br></br>
     <div className="flex flex-col lg:flex-row justify-center items-center gap-12 mx-auto max-w-screen-xl">
         {/* Step 1 */}
         <div className="flex flex-col items-center max-w-xs w-full p-6 border border-gray-700 rounded-lg bg-gray-800 shadow-lg">
@@ -387,7 +390,7 @@ const HomePage = () => {
 </section>
 
     {/* Testimonial Section */}
-    <section className="bg-black py-16 px-4">
+    {/* <section className="bg-black py-16 px-4">
   <h2 className="text-center md:text-3xl text-3xl lg:text-4xl font-bold mb-2 text-white">
     Trusted by category leading brands
   </h2>
@@ -395,7 +398,7 @@ const HomePage = () => {
     With flash, our customers are growing their revenues and scaling globally
   </p>
 
-  {/* First Row - Three Image Cards */}
+  
   <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center items-center">
     <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto lg:mx-0">
       <Image
@@ -428,7 +431,6 @@ const HomePage = () => {
     </div>
   </div>
 
-  {/* Second Row - Two Centered Image Cards */}
   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 justify-center items-center mt-8 md:pl-36">
     <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto md:mx-0">
       <Image
@@ -450,12 +452,9 @@ const HomePage = () => {
       />
     </div>
   </div>
-</section>
+</section> */}
 
-
-
-
-
+      <Infinite/>
 
 
 
