@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Flash", // Replace with your website title
   description: "Your Website Description", // Replace with your website description
   icons: {
-    icon: "/flashlogo.png", // Replace with your favicon, should be in the public directory
+    icon: "/fav.png", // Replace with your favicon, should be in the public directory
   },
 };
 
