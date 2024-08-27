@@ -629,7 +629,7 @@ const HomePage = () => {
   </div>
 
   {/* Second Row - Two Centered Image Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center mt-8 md:pl-36">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 justify-center items-center mt-8 md:pl-36">
     <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto md:mx-0">
       <Image
         className="w-full h-full object-contain rounded-lg"

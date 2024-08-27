@@ -76,7 +76,7 @@ const ContactUsSection = () => {
       {/* Contact Us Section */}
       <section className="bg-[#000033] text-white py-12">
     <div className="max-w-2xl mx-auto px-4"> {/* Reduced max-width to 2xl */}
-      <h2 className="text-center text-3xl font-bold mb-8">Contact Us</h2>
+      <h2 className="md:text-3xl lg:text-4xl font-bold mb-2  font-[Inter Tight] text-center">Contact Us</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium">
@@ -205,10 +205,10 @@ const ContactUsSection = () => {
           {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
         </div>
 
-        <div>
+        <div className="flex justify-center">
           <button
             type="submit"
-            className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md transition duration-300"
+            className="w-auto py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md transition duration-300"
           >
             Submit
           </button>
