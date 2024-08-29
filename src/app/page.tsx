@@ -210,7 +210,8 @@ const HomePage = () => {
 
       {/* Our Products Section */}
       <section id="products" className="py-16 px-4 bg-gradient-to-b from-black to-black/100">
-        <h2 className="text-center md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight] text-white mb-12">Our Products</h2>
+        {/* <h2 className="text-center md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight] text-white mb-12">Our Products</h2> */}
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight] text-white mb-12">Our Products</h2>
         <br></br>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           
@@ -283,7 +284,8 @@ const HomePage = () => {
 
     {/* how it works */}
     <section id="howitworks" className="bg-black text-white py-16 px-4 text-center">
-    <h2 className=" md:text-3xl lg:text-4xl font-bold mb-2  font-[Inter Tight]">How It Works</h2>
+    {/* <h2 className=" md:text-3xl lg:text-4xl font-bold mb-2  font-[Inter Tight]">How It Works</h2> */}
+    <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-[Inter Tight] text-white mb-12">How It Works</h2>
     <h2 className="mt-2 text-sm md:text-lg font-[Inter Tight] text-white">Go Flash in 3 Simple Steps</h2>
     <br></br>
     <br></br>
@@ -390,69 +392,7 @@ const HomePage = () => {
 </section>
 
     {/* Testimonial Section */}
-    {/* <section className="bg-black py-16 px-4">
-  <h2 className="text-center md:text-3xl text-3xl lg:text-4xl font-bold mb-2 text-white">
-    Trusted by category leading brands
-  </h2>
-  <p className="text-center text-white mb-8">
-    With flash, our customers are growing their revenues and scaling globally
-  </p>
 
-  
-  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center items-center">
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto lg:mx-0">
-      <Image
-        className="w-full h-full object-contain rounded-lg"
-        src="/keroblack.png"
-        alt="Image 1"
-        width={300}
-        height={300}
-      />
-    </div>
-
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto lg:mx-0">
-      <Image
-        className="w-full h-full object-contain rounded-lg"
-        src="/cbaz.png"
-        alt="Image 2"
-        width={300}
-        height={300}
-      />
-    </div>
-
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto lg:mx-0">
-      <Image
-        className="w-full h-full object-contain rounded-lg"
-        src="/png.jpg"
-        alt="Image 3"
-        width={300}
-        height={300}
-      />
-    </div>
-  </div>
-
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 justify-center items-center mt-8 md:pl-36">
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto md:mx-0">
-      <Image
-        className="w-full h-full object-contain rounded-lg"
-        src="/belizon.png"
-        alt="Image 4"
-        width={300}
-        height={300}
-      />
-    </div>
-
-    <div className="bg-gray-800 p-8 rounded-lg flex justify-center items-center h-64 w-full max-w-xs mx-auto md:mx-0">
-      <Image
-        className="w-full h-full object-contain rounded-lg"
-        src="/hijab black.png"
-        alt="Image 5"
-        width={300}
-        height={300}
-      />
-    </div>
-  </div>
-</section> */}
 
       <Infinite/>
 

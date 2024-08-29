@@ -1,30 +1,25 @@
-
 "use client";
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isClient, setIsClient] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
-  useEffect(() => {
-    setIsClient(true); // Ensure the router is used only after the component is mounted
-  }, []);
-
-  // Explicitly specify the 'path' parameter as a string type
+  // Function to handle navigation and close the menu
   const handleNavigation = (path: string) => {
     if (pathname === '/contactus') {
       router.push('/'); // Redirect to home page
     } else {
       router.push(`#${path}`); // Normal navigation for other pages
     }
+    setIsMenuOpen(false); // Close the menu after navigation
   };
 
   return (
@@ -77,23 +72,23 @@ const Navbar = () => {
         </button>
 
         {/* Mobile Menu Content */}
-        <div className="flex flex-col items-center justify-center flex-grow mt-12">
+        <div className="flex flex-col items-start justify-start flex-grow mt-12 p-6">
           <Image src="/flashlogo.png" alt="logo" width={32} height={32} className="mb-6" />
-          <div className="text-white text-center">
+          <div className="text-white">
             <button onClick={() => handleNavigation('products')} className="block py-2 hover:text-gray-300 transition duration-300">Products</button>
             <button onClick={() => handleNavigation('howitworks')} className="block py-2 hover:text-gray-300 transition duration-300">How it Works</button>
             <button onClick={() => handleNavigation('services')} className="block py-2 hover:text-gray-300 transition duration-300">Services</button>
             <button onClick={() => handleNavigation('faqs')} className="block py-2 hover:text-gray-300 transition duration-300">FAQs</button>
           </div>
-        </div>
 
-        {/* Contact Us Button (Mobile) */}
-        <div className="mb-8">
-          <Link href="/contactus">
-            <button className="bg-[#1c1c78] text-white font-semibold py-2 px-4 rounded hover:bg-[#000044] hover:text-gray-300 transition duration-300">
-              Contact Us
-            </button>
-          </Link>
+          {/* Contact Us Button (Mobile) */}
+          <div className="mt-8 mb-8">
+            <Link href="/contactus">
+              <button onClick={() => handleNavigation('contactus')} className="bg-[#1c1c78] text-white font-semibold py-2 px-4 rounded hover:bg-[#000044] hover:text-gray-300 transition duration-300">
+                Contact Us
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
