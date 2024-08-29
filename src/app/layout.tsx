@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/fav.png", // Replace with your favicon, should be in the public directory
   },
+  
   openGraph: {
     title: "Flash | Helping Indian Brand Scale Globally | Flash Checkout for 30+ Countries |",
     description: "Borderless Commerce",

@@ -6,8 +6,8 @@ var transport = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "omkar.star98@gmail.com", //change this
-    pass: "axzt bbea kmpc goeh", // change
+    user: "Parikshitbhanushali@gmail.com", //change this
+    pass: "sjlx jkue unce acfo", // change
   },
 });
 
@@ -17,7 +17,7 @@ export const sendMail = async (obj:any) => {
     const info = await transport.sendMail({
       from: `${email}`, // sender address  // sender address
       //to: "Parikshitbhanushali@gmail.com", // list of receivers    // user email
-      to: "omkar.star98@gmail.com",
+      to: "Parikshitbhanushali@gmail.com",
       subject: "Contact us", // Subject line
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html dir="ltr" lang="en">
