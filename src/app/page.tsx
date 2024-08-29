@@ -136,7 +136,7 @@ const HomePage = () => {
   <div className="absolute inset-0 border-2  rounded-full z-0 animate-rotate-border"></div>
 </div>
           <div className="text-xs md:text-sm lg:text-base max-w-4xl mx-auto mb-6 font-light leading-relaxed">
-            <h1 className="text-2xl md:text-3xl lg:text-6xl font-bold text-white font-[Inter Tight]">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl font-bold text-white font-[Inter Tight]">
               Sell your Products Globally with <span className="text-blue-500">Flash OS</span>
             </h1>
             <br></br>

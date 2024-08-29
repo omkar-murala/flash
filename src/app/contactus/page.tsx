@@ -288,6 +288,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const ContactUsSection = () => {
   const Router = useRouter()
@@ -355,9 +356,11 @@ const ContactUsSection = () => {
       try {
         const response = await axios.post("/api/form", formData);
         if(response.status == 200){
+          toast.success("We Will Reach You Soon")
           Router.push("/")
         }
       } catch (error) {
+        toast.error("Something went wrong")
         console.error('Form submission error:', error);
       }
     }
@@ -366,6 +369,7 @@ const ContactUsSection = () => {
 
   return (
     <div className="min-h-screen bg-[#000033] text-white">
+      <Toaster/>
       {/* Contact Us Section */}
       <section className="bg-[#000033] text-white py-12">
         <div className="max-w-2xl mx-auto px-4"> {/* Reduced max-width to 2xl */}
