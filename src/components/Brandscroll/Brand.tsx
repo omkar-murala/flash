@@ -5,7 +5,7 @@ import { useRef } from 'react';
 const Infinite = () => {
   const images = [
     '/kk.jpg',
-    '/Cbaz.png',
+    '/cbaz.png',
     '/ss.jpg',
     '/belizon.png',
     '/hijab black.png',
