@@ -141,7 +141,7 @@ const HomePage = () => {
             </h1>
             <br></br>
             <p className="mt-2 text-sm md:text-lg font-[Inter Tight] text-blue-200">
-              Flash OS supports local brands and sellers to expand into 220+ countries in under 48 hours. We manage your shipping, local compliances, warehousing, returns, payments so you can focus on scaling and growing.
+              Flash OS supports local brands and sellers to expand into 30+ countries in under 48 hours. We manage your shipping, local compliances, warehousing, returns, payments so you can focus on scaling and growing.
             </p>
 
           </div>
@@ -240,7 +240,7 @@ const HomePage = () => {
                     <span className="text-green-500 mr-2">✓</span> Go Live in any country with MOR Model
                   </span>
                   <span className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span> Ship Across 220+ countries with Flash Express
+                    <span className="text-green-500 mr-2">✓</span> Ship Across 30+ countries with Flash Express
                   </span>
                 </p>
               </div>
@@ -269,10 +269,10 @@ const HomePage = () => {
                     <span className="text-green-500 mr-2">✓</span> Global Warehousing and Door to Door Delivery
                   </span>
                   <span className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span> Improve Probitability with Flash Returns
+                    <span className="text-green-500 mr-2">✓</span> Improve Profitability with Flash Returns
                   </span>
                   <span className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span> Connect 50+ Marketplace and Fullfil Orders
+                    <span className="text-green-500 mr-2">✓</span> Connect 50+ Marketplace and  Fulfill Orders
                   </span>
                 </p>
         </div>

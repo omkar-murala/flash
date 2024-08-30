@@ -14,7 +14,7 @@ const ContactUsSection = () => {
     email: '',
     phone: '',
     companyName: '',
-    markets: '',
+    markets: [] as string[],
     orders: '',
     message: '',
   });
@@ -24,8 +24,25 @@ const ContactUsSection = () => {
     email: '',
     phone: '',
     message: '',
+    markets: '',
+    orders: '' ,
+    companyName: '',
   });
 
+
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, checked } = event.target;
+    const updatedMarkets = checked
+      ? [...formData.markets, value]  // Add selected market
+      : formData.markets.filter((market) => market !== value);  // Remove deselected market
+  
+    setFormData((prevState) => ({
+      ...prevState,
+      markets: updatedMarkets,
+    }));
+  };
+  
+  
   const validateEmail = (email: string) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
@@ -33,7 +50,7 @@ const ContactUsSection = () => {
 
   const validateForm = () => {
     let valid = true;
-    const newErrors = { name: '', email: '', phone: '', message: '' };
+    const newErrors = { name: '', email: '', phone: '', message: '', markets: '', orders: '', companyName: '', };
 
     if (!formData.name) {
       newErrors.name = 'Name is required';
@@ -49,6 +66,18 @@ const ContactUsSection = () => {
     }
     if (!formData.message) {
       newErrors.message = 'Message is required';
+      valid = false;
+    }
+    if (formData.markets.length === 0) {
+      newErrors.markets = 'At least one market must be selected';
+      valid = false;
+    }
+    if (!formData.orders) {
+      newErrors.orders = 'Order range is required';
+      valid = false;
+    }
+    if (!formData.companyName) {
+      newErrors.companyName = 'Company name is required';
       valid = false;
     }
 
@@ -155,30 +184,35 @@ const ContactUsSection = () => {
                 onChange={handleChange}
                 className="w-full mt-1 px-4 py-2 border rounded-md bg-gray-800 text-white border-gray-600"
               />
+              {errors.companyName && <p className="text-yellow-500 text-sm mt-1">{errors.companyName}</p>}
             </div>
 
             <div>
               <label htmlFor="markets" className="block text-sm font-medium">
-                Which Markets you want to scale?
+                Which Markets do you want to scale?
               </label>
-              <select
-                id="markets"
-                name="markets"
-                value={formData.markets}
-                onChange={handleChange}
-                className="w-full mt-1 px-4 py-2 border rounded-md bg-gray-800 text-white border-gray-600"
-              >
-                <option value="">Select a Market</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Europe">Europe</option>
-                <option value="Middle East">Middle East</option>
-                <option value="Mexico">Mexico</option>
-                <option value="Canada">Canada</option>
-                <option value="Africa">Africa</option>
-                <option value="Asia">Asia</option>
-              </select>
+              <div className="mt-1 grid grid-cols-2 gap-4"> {/* Use grid for two columns */}
+                {['USA', 'UK', 'Europe', 'Middle East', 'Mexico', 'Canada', 'Africa', 'Asia'].map((market) => (
+                  <div key={market} className="flex items-center">
+                    <input
+                      type="checkbox"
+                      id={market}
+                      name="markets"
+                      value={market}
+                      checked={formData.markets.includes(market)}
+                      onChange={handleCheckboxChange}
+                      className="h-4 w-4 text-blue-600 border-gray-600 bg-gray-800 rounded"
+                    />
+                    <label htmlFor={market} className="ml-2 block text-sm font-medium text-white">
+                      {market}
+                    </label>
+                  </div>
+                ))}
+              </div>
+              {errors.markets && <p className="text-yellow-500 text-sm mt-1">{errors.markets}</p>} {/* Display error message */}
             </div>
+
+            <br></br>
 
             <div>
               <label htmlFor="orders" className="block text-sm font-medium">
@@ -190,6 +224,7 @@ const ContactUsSection = () => {
                 value={formData.orders}
                 onChange={handleChange}
                 className="w-full mt-1 px-4 py-2 border rounded-md bg-gray-800 text-white border-gray-600"
+                required
               >
                 <option value="">Select an Order Range</option>
                 <option value="0-500">0 - 500 Orders</option>
@@ -197,7 +232,9 @@ const ContactUsSection = () => {
                 <option value="1000-5000">1000 - 5000 Orders</option>
                 <option value="5000+">5000+ Orders</option>
               </select>
+              {errors.orders && <p className="text-red-500 text-sm mt-1">{errors.orders}</p>}
             </div>
+
 
             <div>
               <label htmlFor="message" className="block text-sm font-medium">
@@ -226,6 +263,9 @@ const ContactUsSection = () => {
           </form>
         </div>
       </section>
+
+
+
       {/* Footer Section */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-0 lg:px-0">
